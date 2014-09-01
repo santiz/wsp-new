@@ -1,0 +1,73 @@
+#custom-img-border{
+	border:6px solid #ffffff;
+	opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+#custom-img-border:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+    -moz-box-shadow: 1px 1px 10px #000000;
+-webkit-box-shadow: 1px 1px 10px #000000;
+box-shadow: 1px 1px 10px #000000;
+
+}
+
+h1, h4 {
+	text-shadow: 2px 2px 5px rgba(150, 150, 150, 1);
+}
+
+.photo-anim {
+-webkit-animation: cssAnimation 0.6662s 1 ease;
+-moz-animation: cssAnimation 0.6662s 1 ease;
+-o-animation: cssAnimation 0.6662s 1 ease;
+}
+@-webkit-keyframes cssAnimation {
+from { -webkit-transform: rotate(4deg) scale(0.168) skew(1deg) translate(0px); }
+to { -webkit-transform: rotate(0deg) scale(0.828) skew(1deg) translate(0px); }
+}
+@-moz-keyframes cssAnimation {
+from { -moz-transform: rotate(4deg) scale(0.168) skew(1deg) translate(0px); }
+to { -moz-transform: rotate(0deg) scale(0.828) skew(1deg) translate(0px); }
+}
+@-o-keyframes cssAnimation {
+from { -o-transform: rotate(4deg) scale(0.168) skew(1deg) translate(0px); }
+to { -o-transform: rotate(0deg) scale(0.828) skew(1deg) translate(0px); }
+}
+
+#bp-rotate {
+transition:All 0.6662s linear;
+-webkit-transition:All 0.6662s linear;
+-moz-transition:All 0.6662s linear;
+-o-transition:All 0.6662s linear;
+transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+-webkit-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+-moz-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+-o-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+-ms-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+}
+#bp-rotate:hover{
+transform: rotate(0deg) scale(0.67) skew(1deg) translate(0px);
+-webkit-transform: rotate(0deg) scale(0.67) skew(1deg) translate(0px);
+-moz-transform: rotate(0deg) scale(0.67) skew(1deg) translate(0px);
+-o-transform: rotate(0deg) scale(0.67) skew(1deg) translate(0px);
+-ms-transform: rotate(0deg) scale(0.67) skew(1deg) translate(0px);
+}
+
+#jumbotron-rotate {
+-webkit-animation: cssAnimation 1s 1 ease-out;
+-moz-animation: cssAnimation 1s 1 ease-out;
+-o-animation: cssAnimation 1s 1 ease-out;
+}
+@-webkit-keyframes cssAnimation {
+from { -webkit-transform: rotate(360deg) scale(1) skew(1deg) translate(0px); }
+to { -webkit-transform: rotate(0deg) scale(1) skew(1deg) translate(0px); }
+}
+@-moz-keyframes cssAnimation {
+from { -moz-transform: rotate(360deg) scale(1) skew(1deg) translate(0px); }
+to { -moz-transform: rotate(0deg) scale(1) skew(1deg) translate(0px); }
+}
+@-o-keyframes cssAnimation {
+from { -o-transform: rotate(360deg) scale(1) skew(1deg) translate(0px); }
+to { -o-transform: rotate(0deg) scale(1) skew(1deg) translate(0px); }
+}
